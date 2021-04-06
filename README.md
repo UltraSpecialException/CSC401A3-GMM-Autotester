@@ -2,10 +2,10 @@
 
 How to run the tests:
 
-1. Copy the folder containing necessary files to your account
+1. Clone this repo onto your teach.cs account or local computer
 ```
-cp -r /u/cs401/A3/tests <destination of choice>
-cd <path/to/the/folder>
+git clone https://github.com/UltraSpecialException/CSC401A3-GMM-Autotester
+cd <path/to/folder/you/just/cloned>
 ```
 
 2. Run the test file depending on what gmm file you implemented
