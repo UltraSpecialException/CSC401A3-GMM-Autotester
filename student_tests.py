@@ -134,10 +134,7 @@ if __name__ == "__main__":
     logLik = gmm_mod.logLik
     log_lik_expected = np.load("logLik_expected.npy")
 
-    if args.structured:
-        params = gmm_mod.theta("Test Theta", 8, 13)
-    else:
-        params = gmm_mod.theta("Test Theta", data, 8, 13)
+    params = gmm_mod.theta("Test Theta", 8, 13)
 
     params.mu = np.load("param_mu.npy")
     params.Sigma = np.load("param_sigma.npy")
