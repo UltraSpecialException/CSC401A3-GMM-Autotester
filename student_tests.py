@@ -135,7 +135,7 @@ if __name__ == "__main__":
     log_lik_expected = np.load("logLik_expected.npy")
 
     params = gmm_mod.theta("Test Theta", 8, 13)
-
+    
     params.mu = np.load("param_mu.npy")
     params.Sigma = np.load("param_sigma.npy")
     params.omega = np.load("param_omega.npy").reshape((8, 1))
