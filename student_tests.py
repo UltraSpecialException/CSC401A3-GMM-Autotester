@@ -138,6 +138,6 @@ if __name__ == "__main__":
 
     params.mu = np.load("param_mu.npy")
     params.Sigma = np.load("param_sigma.npy")
-    params.omega = np.load("param_omega.npy")
+    params.omega = np.load("param_omega.npy").reshape((8, 1))
 
     unittest.main(argv=["student_tests.py", "-v"])
